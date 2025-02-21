@@ -1,0 +1,22 @@
+[project]
+name = "groth-mindset-challenge"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fatima Munir", email = "fmunir142@gmail.com" }
+]
+requires-python = ">=3.13"
+[dependencies]
+streamlit = "*"
+pandas = "*"
+
+[project.scripts]
+groth-mindset-challenge = "groth_mindset_challenge:main"
+streamlit_app_with_uv = "groth_mindset_challenge.uvStreamlitProject:uvStreamlitProject"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
